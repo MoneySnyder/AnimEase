@@ -34,8 +34,8 @@ end)
 The run method expects two parameters:
 
 easingInfo: A table containing the easing configuration.
-s or style: The easing function to use (default: "Linear").
-d or direction: The direction of the easing (default: "InOut").
-t or time: The duration of the easing in seconds (default: 1).
+- s or style: The easing function to use (default: "Linear").
+- d or direction: The direction of the easing (default: "InOut").
+- t or time: The duration of the easing in seconds (default: 1).
 
 callback: A function that will be called with the eased value. This function is where you should apply the eased value to your animation.
