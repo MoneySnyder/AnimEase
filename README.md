@@ -31,11 +31,14 @@ end)
 ```
 
 ## Parameters
-The run method expects two parameters:
 
-easingInfo: A table containing the easing configuration.
-- s or style: The easing function to use (default: "Linear").
-- d or direction: The direction of the easing (default: "InOut").
-- t or time: The duration of the easing in seconds (default: 1).
+To animate with ease, call the `run` method with the following arguments:
 
-callback: A function that will be called with the eased value. This function is where you should apply the eased value to your animation.
+- **`easingInfo`**: A dictionary that outlines the animation's easing characteristics. It includes:
+  - **`style`** (`s` as an alternative): Specifies the type of easing function (e.g., "Quad", "Cubic"). Defaults to "Linear" if not provided.
+  - **`direction`** (`d` as an alternative): Determines the easing direction — "In" for accelerating, "Out" for decelerating, and "InOut" for both. Defaults to "InOut".
+  - **`time`** (`t` as an alternative): The total duration of the easing effect, measured in seconds. The default duration is 1 second.
+
+The keys in this dictionary can be specified using their full names (`style`, `direction`, `time`) or their shorthand versions (`s`, `d`, `t`). Additionally, uppercase versions of these keys are also accepted (`Style`, `Direction`, `Time`).
+
+- **`callback`**: A function that is executed with the eased value. This is where you apply the eased value to your animation.
